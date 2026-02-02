@@ -1,19 +1,28 @@
-public class Calculator {
+#include <iostream>
+using namespace std;
 
-    public int add(int a, int b) {
+class Calculator {
+public:
+    int add(int a, int b) {
         return a + b;
     }
 
-    public int subtract(int a, int b) {
+    int subtract(int a, int b) {
         return a - b;
     }
 
-    public int multiply(int a, int b) {
+    int multiply(int a, int b) {
         return a * b;
     }
 
-    public int divide(int a, int b) {
+    int divide(int a, int b) {
         return a / b;
     }
-}
+};
 
+int main() {
+    Calculator calc;
+    cout << "hi" << endl;
+    cout << calc.add(5, 5) << endl;
+    return 0;
+}
